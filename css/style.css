@@ -1,0 +1,1154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&display=swap');
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;*/
+/* start  defaut 01 css*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Roboto Slab', serif;
+
+}
+
+.container-full{
+	width: 100%;
+	height: auto;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+
+}
+.container-full:before,
+.container-full:after,
+.container:before,
+.container:after{
+	content: "";
+	clear:both;
+	display: table;
+}
+.col-100{
+	width: 100%;
+	float: left;
+	padding: 0 15px;
+
+
+}
+.col-50{
+	width: 50%;
+	float: left;
+	padding: 0 15px;
+
+
+}
+.col-33{
+	width: 33%;
+	float: left;
+	padding: 0 10px;
+}
+
+.col-20{
+	width: 20%;
+	float: left;
+	padding: 0 15px;
+}
+.col-25{
+	width: 25%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-60{
+	width: 60%;
+	float: left;
+	padding: 0 15px;
+}
+.col-40{
+	width: 40%;
+	float: left;
+	padding: 0 15px;
+}
+.section-padding{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+/* end defaut 01 css*/
+
+
+/* start  header top 01 css*/
+ .header-top{
+ 	background: #111;
+ 	padding: 12px 0;
+ }
+ .heading-top i{
+ 	padding-right: 5px;
+ }
+ .header-top-left li,
+  .header-top-right li{
+  	list-style: none;
+  	display: inline-block;
+  	color: #fff;
+  	font-weight: 700;
+  	font-size: 14px;
+  	padding: 12px;
+
+  }
+  .header-top-left li a,
+  .header-top-right li a{
+  	color: #fff ;
+  	text-decoration: none;
+  }
+.header-top-left{
+  		float: left;
+  	text-transform: capitalize;
+  }
+  
+ .header-top-right{
+  	float: right;
+  	text-transform: capitalize;
+  }
+
+/* end  header top 01 css*/
+
+
+/* start  header  02 css*/
+.home{
+	width: 100%;
+	height: 120vh;
+	background: url("../img/a.jpeg") /*no-repeat center/cover*/;
+
+	background-repeat:  no-repeat;
+    background-position: center;
+    background-size: cover;
+	   /*no-repeat/center/cover*/
+	   padding: 20px 0;
+	   
+
+}
+.main-menu{
+	width: 100%;
+	height: 100px;
+
+
+
+}
+.main-menu .col-75 ul{   /*.col-75 er age space na dile foat kaj kore nah*/
+	float: right;
+	
+}
+
+.main-menu ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px 10px;
+	
+
+}
+.main-menu ul li a{
+	color: white;
+	font-size: 14px ;
+	font-weight: 600;
+    text-transform: uppercase;
+	text-decoration: none;
+	transition: .3s;
+	 padding-bottom: 5px;
+    border-bottom: 2px solid transparent;/* ai last 3 ta line nicer hover css er jonno use koreci*/
+
+}
+.main-menu ul li a:hover{
+	border-bottom: 2px solid #FFB606;
+}
+
+
+/* end  header top 02 css*/
+/* start  home content 03 css*/
+.home-content{
+	padding: 50px 0;
+}
+.home-content h6{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+
+
+}
+.home-content h1{
+	color: #fff;
+	font-size: 100px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.home-content .btn{
+	color: red;
+	background: yellow;
+	font-weight: 700;
+    text-transform: uppercase;
+	text-decoration: none;
+	padding: 14px 26px;
+	line-height: 60px;
+
+
+}
+.home-content .btn:hover{
+	opacity: .2;
+}
+/* end  home content 03 css*/
+
+
+/* start header part 03 css*/
+.home-box{
+	display: flex;
+	padding: 40px;
+	transition: .3s;
+	background: #000;
+	opacity: 0.7;/*last 2 line er jonno background: rgba(0, 0, 0, 0.7); ai line ta likhte pari. ja jono hover nicer ta follow korbo*/	
+	/*position: relative;/* */	
+}
+/* 
+.home-box:hover{
+	background: rgba(0, 0, 0, 1);
+	transition: .3s;
+}
+*/
+
+.home-box:hover{
+	background: #000;
+	opacity: 1;
+}
+
+/*
+.home-box:before{
+	content:"";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: #000;
+	opacity: 0.7;
+	z-index: -1;
+	top: 0;
+	left: 0;
+
+}
+.home-box:hover:before{
+	background: #000;
+	opacity: 1;
+	transition: .3s;
+}*/
+
+
+.home-box img {
+    width: 55px;
+    padding: 15px 0;
+}
+
+.home-box:hover img{
+	transform: scale(1.2);
+	transition: .3s;
+}
+
+
+.home-box-content{
+	padding-left: 35px;
+
+}
+.home-box-content h4{
+	font-size: 24px;
+	font-weight: 700;
+	color: #ffff;
+	text-transform: uppercase;
+
+
+}
+.home-box-content a{
+	font-size: 13px;
+	font-weight: 700 ;
+	color: #ffb606;
+	line-height: 26px;
+	text-decoration: none;
+		text-transform: uppercase;
+}
+/* end header part 03 css*/
+/*start next part 04 */
+
+.courses-box{
+	border: 1px solid #ddd;
+	width: 100%;
+}
+.section-title{
+	position: relative;
+	margin-bottom: 40px;
+}
+.section-title:before{
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 50px;
+	bottom: 0;
+	left: 0;
+	background: #333;
+}
+.section-title h3{
+	padding-top: 40px;
+	font-size: 24px;
+	font-weight: 700;
+	color: black;
+	text-transform: uppercase;
+}
+.courses-bg {
+	
+	height: 200px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.courses-bg img{
+	height: 100%;
+	width: 100%;
+
+}
+.courses-bg:hover img{
+	transform: scale(1.2);
+	transition: .7s;
+}
+/*
+.courses-bg {
+	/*background: url('../img/first-bg.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+*/
+.courses-bg .btn{
+	color: #333;
+   text-transform: capitalize;
+	font-size: 13px;
+	font-weight: 700 ;
+	background: #FEB506;
+	text-decoration: none;
+	text-align: center;
+	position: absolute;
+	line-height: 40px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 40px;
+	width: 100px;
+	opacity: 0;
+    transition: .7s;
+}
+/*	visibility: hidden;
+	visibility: visible;
+	aikhane oacity ba visible jekono ekta use korlei hobe*/
+.courses-bg:hover .btn{
+	visibility: visible;
+		opacity: 1;
+		transition: .7s;
+
+}
+/*
+.courses-bg:hover img{
+	transform: scale(1.2);
+	transition: .7s;
+}*/
+.author{
+   position: relative;
+   border: 2px solid #fff;
+   text-align: center;
+}
+.author img{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	left: 50%;
+	top: -25px;
+	border-radius: 50%;
+	margin-left: -25px;
+
+}
+.author a{
+	padding: 35px 0 15px 0;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 13px;
+	color: #7a7a7a;
+	font-weight: 700;
+}
+.courses-box h4{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.courses-box h4 a{
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 16px;
+	color: #333;
+}
+.courses-box h4 a:hover{
+	color: #ffb606;
+}
+.courses-footer{
+	margin: 15px;
+	border-top: 1px solid #ddd;
+	padding: 35px 0 15px 0;
+}
+.courses-footer span{
+	color: #999;
+	font-size: 14px;
+}
+.courses-footer span i{
+	padding-right: 10px;
+}
+.courses-footer .user{
+	padding-right: 10px;
+}
+.courses-footer .price{
+	float: right;
+	text-transform: capitalize;
+	color: #0adc0a;
+
+}
+.course-btn{
+	 text-align: center;
+}
+.courses .button{
+	display: inline-block;
+	padding: 15px 20px;
+	text-transform: uppercase;
+}
+.course-btn a{
+	text-decoration: none;
+	margin-top: 60px;
+	margin-bottom: 80px;
+	padding: 20px;
+	background: black;
+	color: white;
+}
+.course-btn a:hover{
+	background: white;
+	color: black;
+	border: 2px solid black;
+}
+
+/*end next part 04 */
+
+
+/*start registration form ,part 05 */
+.form{
+	background: url('../img/form.jpeg')
+	no-repeat center/cover;
+	position: relative;
+	z-index: 1;
+
+	
+}
+.form:before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: .6;
+
+}
+/*.form-left{
+	padding: 100px 0;
+}*/
+.form-left h5{
+	font-size: 24px;
+	font-weight: 700;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	line-height: 30px;
+	padding-top: 114px;
+	text-transform: uppercase;
+}
+.form-left h1{
+	font-size: 72px;
+	font-weight: 700;
+	color: #fff;
+	font-family: 'Roboto Slab', serif; 
+	line-height: 75px;
+	text-transform: uppercase;
+}
+
+.form-left span{
+	color: #ffb606;
+
+}
+ul.count-down li{
+	list-style: none;
+	display: inline-block;
+	height: 110px;
+	width: 110px;
+	border: 2px solid #fff;
+	padding: 10px;
+	margin-right: 30px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+   /* position: relative;
+    z-index: 1;*/
+
+
+
+}
+/*.count-down li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;/*inspect kore top,left,height,width diye kora*/
+   /* width: 100%;
+     border: 2px solid #fff;
+    z-index: -1;
+    border-radius: 50%;
+}*/
+ul.count-down li span{
+	display: block;
+	font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form-right {
+    background: #fff;
+    margin-left: 58px;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 400px;
+}
+.form-right:before {
+    content: "";
+    position: absolute;
+    top: -14%;
+    left: -36px;
+    height: 55%;/*inspect kore top,left,height,width diye kora*/
+    width: 119%;
+    background: #FFB606;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+
+.form-right input {
+    padding: 14px;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    border: 2px solid #ddd;
+}
+.form-right h4{
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 34px;
+	padding-bottom: 95px;
+	color: #fff;
+
+}
+.form-right button {
+    border: none;
+    padding: 13px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;/*hover korle hand show korbe */
+    transition: .5s; 
+}
+.form-right button:hover {
+	color: black;
+	background: #FFB606;
+
+}
+
+/*end  registration form ,part 05 */
+/*start event ,part 06*/
+
+.section-title1{
+	position: relative;
+	margin-bottom: 40px;
+}
+.section-title1:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 53px;
+    bottom: -25px;
+    left: 0;
+    background: #333;
+}
+.section-title1 h3 {
+    padding-top: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+}
+.event .section-title1 h3{
+	padding-bottom: 10px;
+}
+.event .section-title1 p{
+	color: #999;
+	font-size: 15px;
+	
+}
+.event .section-title1 .right-btn {
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 38px;
+    line-height: 15px;
+    float: right;
+    border: 3px solid black;
+    background: transparent;
+}
+.event .section-title1 .right-btn:hover {
+    color: #fff;
+    background: #101010;
+    
+}
+.single-event {
+    padding-top: 30px;
+}
+.date{
+	color: #FFB606;
+	font-weight: 700;
+	font-size: 72px;
+	position: relative;
+}
+.date:before{
+	content: "";
+	position: absolute;
+	height: 70px;
+	width: 3px;
+	background: #000;
+	right: 80px;
+	top: 20px;
+}
+.date ul {
+    display: block;
+    
+    /* text-align: center;
+     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto; 
+   */
+    padding-left: 24px;
+    margin-right: 120px;
+
+
+}
+.date ul li{
+	list-style: none;
+	color: #FFB606;
+	 font-size: 72px;
+	 font-weight: 700;
+	 text-align: center;
+    
+}
+.date ul .month{
+	text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+
+} 
+/*.event-content{
+    padding-right: 50px;
+}*/
+.event-content h3 a {
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s;
+}
+.event-content h3 a:hover{
+	 color: #FFB606;
+}
+.event-content ul{
+    padding: 10px 0 20px 0;
+}
+.event-content ul li{
+    list-style: none;
+    display: inline-block;
+    color: #999999;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-right: 12px;
+
+}
+.event-content ul li i{
+	padding-right: 5px;
+}
+.event-content p{
+	 color: #999999;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.event-image img{
+	height: 100%;
+	width: 100%;
+	
+}
+.event .section-title1{
+	margin-bottom: 80px;
+}
+.single-event{
+	border-top: 1px solid #ddd;
+	padding: 50px 0;
+	display: flex;/* most important line 3 ta row k thik vabe jayga dice single event a*/
+}
+
+/*end event ,part 06 */
+/*start news ,part 07*/
+.news{
+	background: url('../img/news/news-bg.jpeg')
+	no-repeat center/cover;
+
+	/*background: url('../img/form.jpeg')
+	no-repeat center/cover;*/
+	position: relative;
+	z-index: 1;
+
+	
+}
+.news:after{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: .6;
+
+}
+.news .section-title1{/*section title1 er full css part 06 theke auto pabe . ja add korci tai sudhu aikhane css korci*/
+
+	margin-bottom: 40px;
+}
+.news .section-title1:before {
+   
+    background: white;
+}
+.news .section-title1{
+	
+	color: white;
+}
+.news .section-title1 h3 {
+    padding-top: 0px;
+    color: white;
+}
+.news .section-title1 h3{
+	padding-bottom: 10px;
+}
+.news .section-title1 p{
+	color: white;
+	text-transform: capitalize;
+	
+}
+.event-box{
+	text-align: center;
+	color: #fff;
+	padding-top: 30px;
+}
+.event-box span {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #f7b10d;
+    padding: 21px 45px;
+    display: inline-block;
+    padding: 9px 50px 10px 50px;
+}
+.event-box img {
+   /*  margin-bottom: -33px;margin-bottom cara ar kono kicu diya e span upore tula jacce nah*/
+    width: 100%;
+    margin-bottom: -21px;
+}
+.news-content h5{
+	padding-top: 20px;/*padding a tag a kaj korbe nah*/
+
+}
+.news-content h5 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+
+   
+}
+.news-content h5 a:hover{
+   color: #FFB606;
+}
+/*end news ,part 07*/
+/*start review, part 08*/
+.review{
+
+}
+.review .section-title1{
+	padding-bottom: 20px;
+	text-align: center;
+}
+.review .section-title1 h3{
+	padding-bottom: 15px;
+}
+.review .section-title1:before{
+	left: 50%;
+	margin-left: -26px;/*width 53px tai 26px aro picone anci majh theke.cause 50% theke before ta suru hobe*/
+
+}
+.subscriver {
+    background: url(../img/subs-bg.webp) no-repeat center/cover;
+    height: 338px;
+    width: 740px;
+    padding: 99px;
+    margin-left: 229px;
+    margin-top: 70px;
+}
+.review .subscriver0 p {
+    width: 750px;
+    text-align: center;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 17px 0 0 0;
+    margin-left: 236px;
+}
+.review .subscriver p {
+    color: #666666;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 10px 0 40px 0;
+    text-align: center;
+}
+.review input[type="text"] {
+    padding: 10px 104px;
+    float: left;
+    font-size: 13px;
+     font-weight: 700;
+    /* line-height: 31px; */
+    text-transform: uppercase;
+    border: 2px solid #999999;
+}
+.subscriver img{
+
+    margin-left: -37px;
+    margin-top: 8px;
+}
+.review input[type="submit"] {
+    padding: 10px 30px;
+   
+    float: right;
+    font-size: 13px;
+    font-weight: 700;
+    /* line-height: 31px; */
+    color: #000;
+    background: #FFB606; 
+    text-transform: uppercase;
+    border: 2px solid #999999;
+
+}
+.review input[type="submit"]:hover{
+	background: #FFB606;
+	opacity: 0.7;
+	}
+
+
+.subscriver button.btn {
+    background: #feb606;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    border: 1px solid #666;
+    margin-top: 50px;
+}
+
+.review input[type="submit"] {
+    padding: 10px 30px;
+    margin-left: 20px;
+  
+}
+
+
+/*.review .section-title {
+    padding-bottom: 60px;
+    text-align: center;
+}
+ .review .section-title h3{
+	 padding-bottom:15px;
+ }
+  .review .section-title p{
+	  color:#999;
+  }
+ .review .section-title:before{
+	 left:50%;
+	 margin-left:-25px;
+	 bottom:40px;
+ }
+input[type="email"] {
+    padding: 15px 20px;
+    margin-right: -4px;
+    padding-right: 160px;
+}
+ .subscriber{
+	 position:relative;
+	 text-align:center;
+	 z-index:1;
+ }
+.subscriber:after {
+    content: "";
+    position: absolute;
+    text-align: center;
+    background: url(../website-images/subscribe.png) no-repeat center/cover;
+    height: 275px;
+    width: 600px;
+    left: 0px;
+    top: -70px;
+    margin-left: 300px;
+    z-index: -1;
+}
+.subscriber p{
+	font-size:15px;
+	font-weight:400;
+	color:#666;
+}
+.subscriber form input{
+	border:1px solid #666;
+	margin-top:50px;
+}
+.subscriber button.btn {
+    background: #feb606;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    border: 1px solid #666;
+    margin-top: 50px;
+}
+
+ /* end review, part 08*/
+  /* start footer, part 09*/
+ /* ==== 08 footer section =====*/
+.footer{
+	background:#111;
+}
+.container .footer-content {
+    color: #fff;
+    margin-left: 140px;
+}
+.footer-logo img{
+	padding-bottom:30px;
+}
+.footer-logo span{
+    display: block;
+	color:#999;
+	margin-bottom:20px;
+}
+.footer-logo span i {
+    margin-right: 15px;
+}
+.footer-logo span a{
+	color:#999;
+	text-decoration:none;
+	transition:.3s;
+}
+.footer-logo span a:hover{
+	color:#ffb505;
+	transition:.3s;
+}
+.social li {
+    list-style: none;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    border: 1px solid #999;
+    border-radius: 50%;
+    text-align: center;
+	margin-right:10px;
+	line-height:35px;
+}
+.social li a{
+	color: #999999;
+}
+.footer-content h6 {
+    font-size: 14px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.footer-content ul li {
+    list-style: none;
+    margin-bottom: 10px;
+	transition:.3s;
+}
+.footer-content ul li:hover a {
+    color:#feb505;
+	transition:.3s;
+}
+.footer-content a {
+    color: #999;
+    text-decoration: none;
+	font-size:13px;
+	font-weight:400;
+	transition:.2s;
+}
+.social .facebook{
+	color:#fff;
+	transition:.3s;
+}
+.social .facebook:hover{
+	background:#3a559f;
+	border: 1px solid #3a559f;
+	transition:.3s;
+}
+.social .facebook:hover i{
+	color:#fff;
+	transition:.3s;
+}
+.social .twitter{
+	color:#fff;
+	transition:.3s;
+}
+.social .twitter:hover{
+	background:#06e9f0;
+	border: 1px solid #06e9f0;
+	transition:.3s;
+}
+.social .twitter:hover i{
+	color:#fff;
+	transition:.3s;
+}
+.social .google{
+	color:#fff;
+	transition:.3s;
+}
+.social .google:hover{
+	background:#f65544;
+	border: 1px solid #f65544;
+	transition:.3s;
+}
+.social .google:hover i{
+	color:#fff;
+	transition:.3s;
+}
+
+.social .pinterest{
+	color:#fff;
+	transition:.3s;
+}
+.social .pinterest:hover{
+	background:#f3380c;
+	border: 1px solid #f3380c;
+	transition:.3s;
+}
+.social .pinterest:hover i{
+	color:#fff;
+	transition:.3s;
+}
+
+
+.footer-end-line {
+    margin-top: 100px;
+	position: relative;
+	margin-bottom:-25px;
+}
+.footer-end-line:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 1154px;
+    left: 15px;
+    top: -40px;
+    background: #999;
+}
+.footer-left span{
+	color:#999;
+	font-size:13px;
+	font-weight:400;
+	line-height:30px;
+}
+.footer-left span .wordpress{
+	color:#999;
+	text-decoration:none;
+	transition:.3s;
+}
+.footer-left span .wordpress:hover{
+	text-decoration:underline;
+	transition:.3s;
+}
+.footer-left span .theme{
+	color:#ffb505;
+	text-decoration:none;
+	transition:.3s;
+}
+.footer-left span .theme:hover{
+	text-decoration:underline;
+}
+.footer-menu ul li{
+	list-style:none;
+	color:#999;
+	display:inline-block;
+	float:right;
+}
+.footer-menu ul li a {
+    text-decoration: none;
+    color: #999;
+    margin: 15px;
+	transition:.3s;
+	font-size:13px;
+	font-weight:400;
+	line-height:30px;
+}
+.footer-menu ul li a:hover {
+    text-decoration: underline;
+    color: #ffb606;
+	transition:.3s;
+}
+
+
+/* end footer, part 09*/
